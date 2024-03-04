@@ -1,0 +1,13 @@
+- Real Estate investments are favoured by super rich
+	- Such investments may entice govts to remake their urban spaces to attract the super rich 
+	- Surrounds change also, e.g. less residents, less economic activities in the nearby area
+- Capital's spatial fix
+	- Places where capital can grow?
+- Gated communities
+	- Exclusivity/status symbol, privacy are some plus points
+- Space of Exception
+	- Certain land spaces can be designated to have different laws
+	- Homogenous in terms of similar cosmopolitan views despite different nationalities
+- Income inequality is at a recent historic low (gini coefficient)
+	- But it is not a full picture because gini only counts income from work, and does not consider wealth/property
+	- In Singapore the income from work is under half of national income

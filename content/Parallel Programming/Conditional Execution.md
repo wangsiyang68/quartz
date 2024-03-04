@@ -1,0 +1,1 @@
+Not the same as branch speculation, since that is in view of single core, where one branch is speculated and executed. Here both branches are executed no matter what 

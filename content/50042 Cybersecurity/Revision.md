@@ -1,0 +1,79 @@
+# Outline
+- Week 1: Pre-modern Ciphers, basic security concepts
+	- ~~Confidentiality, Integrity, Availability~~
+	- ~~Privacy, Authenticity, Non-repudiation~~
+	- ~~Caesar's Cipher/Substitution Cipher/Vignere Cipher~~
+		- Attack: Frequency Analysis
+	- ~~Transposition Ciphers~~
+	- ~~Subsitutions on binary data have $2^n!$ possible keys~~
+	- **One Time Pad**
+		- Proof: Brute force failure
+		- Attack: When re-use key
+- Week 2 & 3: Hash Functions
+	- ~~Cryptographic Hash Functions:~~
+		- ~~Preimage resistance~~
+		- ~~Second preimage resistance~~
+		- ~~Collision resistance~~
+		- ~~Random oracle~~
+	- ~~MD5 Construction~~
+		- ~~Rough idea (diagram form)~~
+		- **Insecure MD Constructions:**
+			- IV = 0
+			- Plainly XOR-ing each block
+			- Length Extension Attack
+				- Fix: Hash hashvalue again with the message
+				- Fix: Truncate the output
+	- ~~Birthday paradox: $O(2^{n/2})$ , where n = bit length of hash value~~
+	- ~~Commitment schemes ~~
+		- ~~Idea: Send hash value first (committment), followed by message. Think of email chess game~~
+		- ~~Attack: Invert commitment~~
+		- ~~Fix: Cryptographic padding (i.e. in SHA1)~~
+	- **Message Authentication Code**
+		- ~~Naive MAC constructions (secret as prefix or suffix)~~
+			- ~~Attack: Length Extension/re-use MAC if second preimage is found~~
+			- Fix: HMAC
+	- ~~Secret storage (password)~~
+		- ~~Attack: Rainbow Tables~~
+		- ~~Fix: Salt~~
+
+- Week 4: Block Ciphers
+	- ~~Properties: Confusion and Diffusion~~
+	- ~~Covered Ciphers: DES, AES, PRESENT~~
+	- ~~Block Cipher Modes (i.e. How to use safely for message > 1 block length)~~
+		- ~~ECB mode~~
+			- ~~Attack: Does not remove image fully as same values give the same hashvalues~~
+		- ~~Other modes ~~
+			- ~~CTR, OFB, CFB, CBC~~
+			- ~~Parallel in encryption and decryption?~~
+	- **Nonce**
+- Week 5: Modular Arithmetics
+	- Groups, Rings, Fields
+		- Extension fields are especially used in cryptography
+	- Multiplicative inverse
+		- Euler's Extended Theorem
+
+- Week 6: DHKE
+	- DHKE 
+		- Procedure, how is Modular Arithmetics used?
+		- Discrete Logarithm problem
+		- Square-And-Multiply algorithm
+- Week 8: RSA
+	- Encryption
+		- Procedure
+		- Proof
+		- Attack: Malleabilty
+		- Fix: Hashing and Padding (OAEP)
+	- Digital Signatures
+		- Naive implementation
+			- Attack 1: multiply two signatures to generate valid signature
+			- Attack 2: reverse engineer message by generating signature first
+			- Fix: Sign a hash value
+			- Fix: Mixing Operation Modes
+		- Man in the Middle Attack
+			- Attack 3: Active attacker
+			- Fix: Certificates with PKI/WOT
+				- Centralized, CA tier list, each vouching for intermediate
+				- Decentralized, Web of Trust
+
+
+#foc 

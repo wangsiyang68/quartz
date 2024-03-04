@@ -1,0 +1,97 @@
+## Types
+- Infrastructure
+	- Everyone connects to one access point
+	- The common wifi that people think about
+- Peer to Peer
+	- Everyone connects to each other directly
+	- More commonly used for Content Delivery Network due to the large files needed to be sent.
+		- More efficient to send each other the content, rather than to everyone connect to 1 access point
+## Possible Attacks:
+- MITM attack
+	- Connect to "fake" SUTD_Wifi that is actually set up by the attackers
+- Spoofing attacking
+	- Copy the SSID, which is a 32-character **service set ID**
+	- It is not signed (i.e. no PKI)
+	- Use case: setup a fake wifi that reuses the SSID and it is just outside of the range of the legit wifi
+- Eavesdropping
+	- All wireless network traffic can be eavesdropped
+	- Sessions are kept active after brief disconnects, because its entirely possible that wireless connections will disappear for a short while when somebody moved to an area without wifi
+ - Wardriving
+	 - Kaypoh to find out what are the networks out there in an area
+	 - To figure out which networks could be targeted
+- Warchalking
+	- Addition to wardriving, add some notes on potential weaknesses to exploit on the network
+
+## Types of Wireless Encryption
+
+- WEP (Wired Equivalent Privacy)
+	- noob, is unsecure
+	- **Characteristics**
+		- Confidential
+		- Data Integrity
+		- Access control: Only properly encrypted packets are routed
+		- Designed with inexpensive hardware in mind 
+	- **Working Mechanism**
+		- Encrypts the body of each frame at the second layer (data-link level)
+		- Uses RC4 Stream Cipher
+			- Generate a one time key stream with a **key** and **IV**
+			- Do XOR with message and the message || CRC
+				- CRC is Cyclic Redundancy Check 
+					- For integrity/corruption check purposes
+		- Decrypts using the same OTP that is generated with the key again
+	- **WEAKNESSES**
+		- **Encryption methods**
+			- Weak keys in RC4 (Rivest Cipher 4)
+				- super fast
+				- But, keys are non random for the first few bytes
+					- Makes it easier to brute force the key
+			- Reused IV and known plaintext attack
+				- OTP is reused for different transmissions, if key and IV does not change (possible)
+				- Text in the wireless packet header is usually known
+				- Example of getting the plaintext without breaking RC4:
+					- RC4(X) **XOR** X  **XOR** RC4(Y) = Y (Assume X is known)
+			- Weakness in CRC
+				- Main use case: to ensure integrity when there is channel noise (protect against random EM wave zzt zzt flip bits)
+				- Really poor replacement for HMACs
+					- Is a linear function to the payload
+					- Possible to flip bits in a message and derive the corresponding bits to adjust in CRC 
+						- Implication: Easy to tell what is the necessary change in the "hash" when you modify the original message)
+		- **Key Management**			
+			- IV Management
+			- Default Keys (never change after setup, is known to attacker)
+				- Attacker only need to know the IV
+		- **Authentication**
+			- Only match SSIDs
+				- **Attacker can eavesdrop SSID broadcasted...to do...?**
+			- MAC filtering
+				- permit or block device based on MAC addresses, which are exchanged in an unencrypted format
+				- **The attack...is...?**
+- WPA
+	- better because
+		- Larger secret key and IV
+			- Harder to brute force
+		- Supports other authentication other than shared secret in CRC, such as username password
+		- Use cryptography method to check integrity instead of CRC
+		- Frame counter to prevent replay attacks
+		- Dynamically changes key as session continues
+- WPA2
+	- Even better than WPA because
+		- Use AES instead of RC4
+			- These days routers have much better hardware, and AES is still pretty efficient
+		- MAC uses some new ass function called Counter Mode with Cipher Block Chaining (CCMP) with AES. CCMP will handle all of the encryption, key management, and integrity
+			- Counter Mode: Everytime you create a key stream, a counter is increased by one, where IV is the counter. Creates the cipher text
+			- Cipher Block Chaining: Last block of cipher will be used as message authentication, is the Integrity check portion
+	- To decode: Receiving end also has IV (refer to page 28 of slides for diagram)
+		- Create Key stream
+		- XOR encrypted portion with key stream to get the payload and MIC (the MAC portion)
+		- Run CBC with header and payload portion
+		- And then check if the result is same as the MIC
+		![[Pasted image 20231127102534.png]]
+
+## Attacks against WEP
+- Idea: wait for a collision in the IV
+	- Slow ass attack:
+		- Passively listening for the IV
+	- Fast attack
+		- Packet Injection
+			- Send out packets that cause the router to send out packets with IV

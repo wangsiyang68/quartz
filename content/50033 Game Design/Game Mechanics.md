@@ -1,0 +1,12 @@
+- Reflex
+    - Not timing because the cue can be controlled by 2nd player (i.e. unpredictable)
+- Timing
+    - Quite hard?
+- Precision and accuracy
+    - pewpew
+- Measurement
+    - Kind of like platformer
+- Tactical
+- Strategy
+- Management
+- Puzzles

@@ -1,0 +1,11 @@
+XSS
+- Where did the attacker inject the code, Compare with CSRF
+- What the advantages of XSS over CSRF
+	- have server same origin privilege
+- Several ways to inject XSS
+	- Do code injection into the data channel
+		- image, new window, etc
+- How does XSS propagate?
+	- two approach
+		- link
+		- dom

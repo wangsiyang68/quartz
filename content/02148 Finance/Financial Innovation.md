@@ -1,0 +1,39 @@
+- 19 Financial innovations 
+	- Interest rates
+		- Interest rates used to be known as usury, and was prohibited. Still prohibited under Islamic principles
+	- Eurobonds
+		- Bonds from a separate currency
+- More than just a physical product
+	- Can be about concepts (interest), **flows of knowledge** (see next case study), social relations
+- **Case Study**: France and Securitization (using underlying asset, e.g. the house for mortgage can be resold to someone else, not just the OG bank that made the loan. Thats mortgage backed securities)
+	- Initial title banking regulations: could not conceal assets by transferring them from balance hseets to SPV
+	- To overcome this regulatory hurdle, govt passed some new law
+	- Knowledge circulation: These French innovations then informed Australia of what they could do to introduce the securitization knowledge
+	- The British helped to inject new knowledge about how to create securitization products that better suit the French context
+- **Securitizations were linked to 2008 Fin crisis**
+	- Huge demand for Mortgage back securities due to high interest rates on these securities relative to the low interest rates on other financial instruments ()
+	- Increased pressure to create these new securities result in bad loans (subprime), and predatory lending, where people could easily afford the loans but the interest made it impossible to repay in the loans.
+	- People could not pay for these house and many people defaulted, resulting in a increase in supply and a decrease in the price of houses
+	- Investors found out that although they could get their houses from the mortages, they werent worth anything much so they made a loss on their investments
+	- credit default swaps?
+	- Moral hazard: everyone thought some one else could pick up the risk (moving on the risk of owning the mortgage paper to someone else via selling securitizations) that they took on more risky bets than they could take on
+- **High frequency trading** = scalping?
+	- Profiting from the fact that machines respond faster to small incremental differences, to buy and sell many (millions) of financial instruments
+	- Methods:
+		- Front running
+			- enter a favourable trade using private private information that is not available to the public -- not illegal if insider information is used. An example is "testing the water" before the market opens
+	- Geographical location matters, because how fast you get information can give you an edge in making trades. It also allows people to profit from price difference between exchanges or for the same or similar securities
+	- Increased risk of flash crash as computers can execute so many trades
+		- Make markets vulnerable to direct manipulation -- react instantly to fake news and many shares are sold off
+			- Navinder Sarao - Making sales posts without actually selling them, because they would be eventually sold. The large volumes of sales causes a change in market (price goes down), and then when he decides its enough he can be on the other side as a buyer to profit off the lower price
+			- But it could have been other players in the party, as it is only sure that the scale of Nav's trades have helped to exacerbate the flash crash, but it is not clear that is the actual cause of the flash crash (did he cause the initial wave, or was he just riding the big wave and making it bigger?)
+- **Bitcoins** (Different from blockchain -- the underlying technology)
+	- As a means to escape government oversight and heavy-handed intervention (libertanism)
+	- ICOs
+		- Method of raising  funds by blockchain/cryptocurrency
+		- Create and sell its own tokens/bitcoins(?)
+	- Bitcoin as 'Social Space'
+		- Political hierarchy and organization/asymmetries in power still exists in an anarchistic concept
+			- Mining concentrated in crypto farms
+			- Strong crypto bros forums to disseminate related knowledge
+	- Of all people, our brother Malaysia has pretty high hashrates?
