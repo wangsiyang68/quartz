@@ -1,14 +1,16 @@
+## Definition
 Also known as multinomial logistic regression, softmax classifier, maximum entropy classifier
-
-Note that
-log in the loss function refers to natural log, i.e. ln
+Note that log in the loss function refers to natural log, i.e. ln
+$$ s(x_{i}) = \frac{e^{x_i}}{\sum_{j=1}^{n}{e^{x_j}}}$$
+## Purpose
+Rescale/normalize values so that the trend is preserved, but the new vector consists of positive values that sum up to one
 
 Steps: 
 1. Calculate logits (linear regression)
 2. Set probabilities to be above >= 0 (e.g. can take the exponent of each value)
 3. normalize so that probabilities sum to 1
 4. Compare y_pred value and y_gt value
-5. Caluclate Cross-entropy (???)
+5. Caluclate [[Cross Entropy]]
 
 ## Some intuition
 - Cross Entropy loss is set as -log because we want to maximize probability
