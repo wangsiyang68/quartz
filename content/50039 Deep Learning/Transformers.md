@@ -10,11 +10,21 @@
 $$ V_{i} = \sum_{j}^{N}{a_{ij}*v_{j}}$$
 - **vectors V, K, Q? Gets the values and keys of what?**
 	- Q = query
-	- V = values 
+		- Q blocks have questions we want to ask.
 	- K = keys
-	- Obtain a similarity score sij?
-	- q,v,k are the same at the start?
-- Why does attention =  $\text{softmax}(QK^{T})$?
+		- K blocks have important information that helps us answer the questions.
+		- Essential information about each token
+	- V = values 
+		- V blocks have the answers to the questions.
+		- The thing that really encodes the information about the thing?
+		- $Q*K^T$ is like the weight for V
+	- Obtain a similarity score sij using  $Q*K^T$?
+	- q,v,k are the same at the start.
+
+- Why does  $\text{softmax}(QK^{T})$ give the similarity score, also known as Attention?
+	- Because $Q*K^T$ is a dot product that will help to quantify the similarity 
+	- The Query is dot producted against all the Keys, so each token is dot producted against itself and all other Keys
+	- The softmax is to give a weighted average of all the values, so that they sum to 1
 - Normalize the output with softmax as well, do not want the embedding to change too much
 - What is **Multi-Head Attention?**
 	- Doing the above calculation of attention values in parallel

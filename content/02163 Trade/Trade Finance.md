@@ -1,0 +1,1 @@
+Need transparency: Hin Leong was able to have duplicate orders and more cash 
