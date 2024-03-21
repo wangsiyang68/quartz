@@ -14,4 +14,4 @@ S = stride length
 ## Usage
 1. Small filters are often used to reduce parameters needed. In fact, 1x1 filters are often employed
 
-#cvfinals
+#cv

@@ -1,7 +1,13 @@
 ---
 title: Welcome to Siyang's Digital Garden
 ---  
-Here are some of his course notes written since Term 5 in SUTD (May 2022)  
+My motivation of maintaining this space is simple: Learning in Public and Learning by Design.
+
+I believe that by putting my learning notes out there in the public, this forces me to be more coherent and less lazy in writing. Besides writing for my future self, I will be presenting my learnings to the public as well. 
+
+I want to make a habit of better consolidate my learnings. Learning is a cyclic process where old information should be continuously updated after real-life experimenting. By making it a habit to maintain my Digital Garden, I hope that it will eventually grow from a Work-In-Progress, to a slightly more complete Work-In-Progress.
+
+Here are some of his course notes written since beginning note-taking in Term 5 of SUTD (May 2022)  
 
 ## Term 5 (May - Aug 2022)  
 [[Web Programming|50.003 Elements of Software Design]]  
@@ -10,7 +16,7 @@ Here are some of his course notes written since Term 5 in SUTD (May 2022)
 [[Cybersecurity Course|50.042 Cybersecurity Course]]  
 
 ## Exchange Term (Mar - Jun 2023)  
-(TBC) Machine Learning  
+[[Machine Learning Course|Machine Learning]]
 (TBC) Computer Vision  
 (TBC) Parallel Programming  
 

@@ -12,4 +12,4 @@ The [[Convolutional Neural Networks|CNN]] training scheme can usually be broken 
 7. Tune hyperparameters
 	1. e.g. adjust LR
 
-#cvfinals
+#cv

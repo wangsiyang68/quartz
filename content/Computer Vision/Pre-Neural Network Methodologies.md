@@ -7,4 +7,4 @@ Discriminative:
 Generative
 -
 
-#cvfinals
+#cv

@@ -19,6 +19,7 @@ Made up of three relevant libraries
 - cudaError, Success, ErrorMemoryAllocation
 - [[Instantiating cuda kernels]]
 - [[cudaFree]]
+- [[Parallel Programing Methods]]
 
 ## CUDA Performance Considerations
 - [[GPU Threads|Setting number of threads]]

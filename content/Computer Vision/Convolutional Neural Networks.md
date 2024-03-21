@@ -29,4 +29,4 @@ Main challenges facing CNN training:
 - EfficientNet
 - A convolutional neural network architecture and scaling method that uniformly scales all dimensions of depth/width/resolution using a _compound coefficient_. 
 - Unlike conventional practice that arbitrary scales these factors, the EfficientNet scaling method uniformly scales network width, depth, and resolution with a set of fixed scaling coefficients.
-#cvfinals
+#cv

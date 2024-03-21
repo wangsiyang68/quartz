@@ -3,4 +3,4 @@ Max Pooling layer is often applied in [[Convolutional Neural Networks|CNNs]] to 
 
 How does it work?
 
-#cvfinals
+#cv

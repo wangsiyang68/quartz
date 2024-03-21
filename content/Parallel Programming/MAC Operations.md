@@ -1,4 +1,4 @@
-Stands for Multiply and aCcumulate
-Often used in matrice multiplication/convolution
+Stands for Multiply and Accumulate
+Often used in matrix multiplication/convolution
 
 #pp 

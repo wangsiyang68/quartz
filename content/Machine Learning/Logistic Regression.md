@@ -5,3 +5,4 @@ In practice, Newton method is not used either because calculating the Hessian is
 
 
 An extension of logistic regression is [[Softmax Regression]], which is the multiclass version of it
+#ml
