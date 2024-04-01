@@ -19,7 +19,7 @@ Preparing transition to the 50.040 Natural Language Processing course.
 
 •        **Week 9 (Man):** Quick introduction to Graph Theory and typical graph datasets and problems, basics of Graph Convolutional Networks, brief state-of-the-art of advanced Graph Convolutional Networks.
 
-•        **Week 10 (Man):** Generative Models, Autoencoders and Variational Autoencoders, Generative Adversarial Networks (GANs), Advanced concepts on Generative Adversarial Networks, Practice on GANs.
+•        **Week 10 (Man):** [[Generative Models]], Autoencoders and Variational Autoencoders, Generative Adversarial Networks (GANs), Advanced concepts on Generative Adversarial Networks, Practice on GANs.
 
 •        **Week 11 (Man):** Topics for curiosity. Introduction to Physics-Informed Neural Networks. Introduction to diffusion models. Introduction to Explainability/Interpretability and open questions in research about Neural Networks. What will be the next revolution in AI? (a word on ChatGPT, Dall-E, etc.).
 
