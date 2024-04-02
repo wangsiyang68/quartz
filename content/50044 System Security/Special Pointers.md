@@ -8,17 +8,18 @@ Great concept, but not implemented in C.
 It allows for bounds checking without much time overhead or space storage. Just that have some constraints on space storage
 Also note that this is backwards compatible, since metadata is not stored with the pointer, but elsewhere in a metadata table
 
-**Characteristics**
+**Characteristics**  
 3 special points about baggy pointers:
 - The number of slots must be a power of $2^b$
 	- b is usually given
 	- Therefore, here are the valid memory block sizes: $2^4$, $2^5 \ldots 2^{(b+x)}$ bytes 
 - Allocate each memory block to the the $2^{(b+x)}$ boundary
+	- This allows us to quickly get to the base address of the memory block
 - Allow slack for out of bound
 	- If out of bound distance < slotsize/2, allow read, but not write
 	- You can read stuff beyond the allocated size, up to the baggy range, but you cannot write in the baggy range
 
-**Setup**
+**Setup**  
 - Slot size is defined as $2^{(b)}$ bytes
 - There is a metatable elsewhere in the memory
 	- The key is the slot number, the value is the size of the memory as the power of 2
@@ -35,12 +36,13 @@ Example Metatable
 | 12341       | 5     |
 | 12340       | 5     |
 
-**How to check if pointer is within allocated memory block?**
+**How to check if pointer is within allocated memory block?**  
 Given a valid pointer p in an allocated memory block, and $2^b$ slot size, where b = 4 
 - Find the slot number by 
-	- Multiplying it with $2^4$
-	- **Address in bits**, shift left by b **bits**
+	- Dividing it with $2^4$
+	- **Address in bits**, shift right by b **bits**
 		- so if b = 4, remove the last digit (since in hex address, each digit would take up 4 bits)
+	- Repeat this process in reverse to go from address from slot number
 - Find the slot size 
 	- `metatable[slot_number]`
 - Find size of memory block p is in
