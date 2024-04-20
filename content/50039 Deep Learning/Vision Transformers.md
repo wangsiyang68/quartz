@@ -56,9 +56,25 @@ $$
 - Quadratic complexity
 	- For N' patches, the complexity is 
 		- $\Omega{(\text{MSA})} = 4N'D^2 + 2N'^2D$
-			- 4 because there is 4 types of weights: WK, WQ, WV, W0
-			- N^2 because need to match n queries for key, and each is D length when dot product, will have D calculations
-			- The multiplication between attention and value vectors is mat mul a N' by N' matrix (attn) with a N' by D matrix (N' patches of D length in the V matrix)
+			
+		$N'$ = The number of input embeddings
+		$D$ = dimensions of the input embedding vectors
+		
+		**First term**
+		- 4 because there is 4 types of weights: WK, WQ, WV, W0
+		- Each of the N embedding vector is dot producted with each of the D weights of D length (since Weights matrix has shape $(D,D)$ 
+		- Therefore, $4 * N' * D * D = 4N'D^2$
+		
+		**Second term**
+		- Once the Q and K matrices are calculated, we carry out dot product on these two matrices to find attention
+			- The matrix Q has a shape of $(N, D)$ and matrix K has a shape of $(N, D)$
+			- There are $N'$ queries and $N'$ keys, and each dot product has $D$ calculations
+			- Therefore, $N' * N' *D = N'^2 D$
+		- After $\text{softmax}({\frac{QK^T}{\sqrt{d}}})$ is calculated, the attention is multiplied with matrix $V$
+			- The attention has a shape of $(N',N')$, while matrix V has a shape of $(N',D)$
+			- Each of the $N'$ weights with length $N'$ is dot producted for each of the D embedding dimensions.
+			- Therefore $N * N * D = N'^2 D$
+		- Since both results are $N'^2 D$, the second term is $2N'^2 D$
 - Unable to handle vision problems with different scale objects
 
 ## Improvements
