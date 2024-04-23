@@ -11,7 +11,7 @@
 			- Utilise the assumption that all observations in the sample are iid (identical and independently distributed) to reduce the probability of distribution given the model parameters
 			- Utilise log to simplify the multiplication into summation
 ## Harder context
-- [[Generative Adversarial Nets]] to model image distribution
+- [[Generative Adversarial Networks]] to model image distribution
 	- Cannot use MLE to because images have high dimension space
 	- Utilise DNN to encode this complex distribution 
 	- Start with random noise

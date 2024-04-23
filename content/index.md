@@ -26,4 +26,4 @@ Here are some of his course notes written since beginning note-taking in Term 5 
 
 ## Term 8 (Jan - Apr 2024)  
 (TBC) System Security  
-[[Deep Learning|50.039 Theory and Applications of Deep Learning]]  
+[[Deep Learning Syllabus|50.039 Theory and Applications of Deep Learning]]  
