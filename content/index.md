@@ -16,8 +16,8 @@ Here are some of his course notes written since beginning note-taking in Term 5 
 [[Cybersecurity Course|50.042 Cybersecurity Course]]  
 
 ## Exchange Term (Mar - Jun 2023)  
-[[Machine Learning Course|Machine Learning]]  
-(TBC) Computer Vision  
+[[Machine Learning Course|STA3142 Machine Learning]]  
+[[Computer Vision Syllabus|CSI4116 Computer Vision]]
 (TBC) Parallel Programming  
 
 ## Term 7 (Sep - Dec 2023)  
@@ -25,5 +25,5 @@ Here are some of his course notes written since beginning note-taking in Term 5 
 (TBC) Game Design  
 
 ## Term 8 (Jan - Apr 2024)  
-(TBC) System Security  
+[[System Security Course|50.044 System Security]]  
 [[Deep Learning Syllabus|50.039 Theory and Applications of Deep Learning]]  

@@ -87,19 +87,19 @@
 		- CycleGAN
 	- Latent diffusion model
 
-•        **Week 12 (Matt):** **Introduction to [[Reinforcement Learning]]**
-- State-action-rewards systems
-- Multi-armed bandit problem
-- The exploration/exploitation trade-off 
-- Q-learning and Deep Q-Learning
-- Actor-critic learning methods
-- Brief state-of-the-art discussion about further works in Reinforcement Learning 
-- Recent uses of Reinforcement Learning with Human Feedback
-- Other Problems
-	- [[Physics-Informed Neural Networks]]
-	- Markov states
-	- Partially observalbe environment
-	- SARSA
-	- Non-stationary problems
+- **Week 12 (Matt):** **Introduction to [[Reinforcement Learning]]**
+	- State-action-rewards systems
+	- Multi-armed bandit problem
+	- The exploration/exploitation trade-off 
+	- Q-learning and Deep Q-Learning
+	- Actor-critic learning methods
+	- Brief state-of-the-art discussion about further works in Reinforcement Learning 
+	- Recent uses of Reinforcement Learning with Human Feedback
+	- Other Problems
+		- [[Physics-Informed Neural Networks]]
+		- Markov states
+		- Partially observalbe environment
+		- SARSA
+		- Non-stationary problems
 
 #dl
