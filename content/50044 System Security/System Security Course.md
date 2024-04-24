@@ -1,4 +1,4 @@
-SUTD, 2024 Spring 
+SUTD, 2024 Spring  
 50.044
 
 | Week | Overview                                 | Subtopics                                                                                                                                                                                                                       |

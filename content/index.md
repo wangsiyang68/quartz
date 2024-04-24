@@ -17,7 +17,7 @@ Here are some of his course notes written since beginning note-taking in Term 5 
 
 ## Exchange Term (Mar - Jun 2023)  
 [[Machine Learning Course|STA3142 Machine Learning]]  
-[[Computer Vision Syllabus|CSI4116 Computer Vision]]
+[[Computer Vision Syllabus|CSI4116 Computer Vision]]  
 (TBC) Parallel Programming  
 
 ## Term 7 (Sep - Dec 2023)  
