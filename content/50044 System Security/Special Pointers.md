@@ -16,8 +16,17 @@ Also note that this is backwards compatible, since metadata is not stored with t
 - Allocate each memory block to the the $2^{(b+x)}$ boundary
 	- This allows us to quickly get to the base address of the memory block
 - Allow slack for out of bound
-	- If out of bound distance < slotsize/2, allow read, but not write
-	- You can read stuff beyond the allocated size, up to the baggy range, but you cannot write in the baggy range
+	- **If out of bound distance < slotsize/2 on EITHER SIDE, allow read, but not write**. So you can read stuff beyond the allocated size, up to the baggy range, but you cannot write in the baggy range
+		- For example: 
+			- line 2 in the below code is okay because the allocated slot is of 256 bytes, and the result pointer is **read** 44 bytes past the end, which is less than the slot_size/2 = 128 (assuming here that slot_size = 256)
+			- However, the fifth line will fail, because it is an out-of bounds **write**
+		```
+		char *q = malloc(256)
+		char *r = q + 300
+		char *s = r - 100
+		char a = *s
+		*r = a
+		```
 
 **Setup**  
 - Slot size is defined as $2^{(b)}$ bytes

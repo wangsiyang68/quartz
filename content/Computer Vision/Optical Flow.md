@@ -2,7 +2,7 @@
 **Task**: Given two subsequent frames, estimate the apparent motion field u(x,y) and v(x,y) between them
 
 Optical Flow is the apparent motion of brightness patterns in the image
--  Ideally, optical flow would be the same as the [[motion field]]. Realistically, it is instead an approximation of it
+-  Ideally, optical flow would be the same as the [[Motion Field]]. Realistically, it is instead an approximation of it
 - **Note**: apparent motion can be caused by lighting changes without any actual motion
 
 ## Estimating optical flow

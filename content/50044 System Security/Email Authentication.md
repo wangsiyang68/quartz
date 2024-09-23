@@ -15,5 +15,3 @@ Techniques
 		- Forensic report to give u a status report per spoofed email
 	- Challenge: cannot detect if the malicious mail server is hosted on a legitimate cloud service (e.g. amazon)
 		- Effective, but usually will be detected by the cloud provider after some time.
-
-Lack of c

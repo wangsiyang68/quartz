@@ -12,7 +12,7 @@ The motion field is an ideal construction, based on the idea that it is possible
 
 The problem is that in most cases each **image point has an individual motion**(?) which therefore has to be locally measured by means of a [neighborhood operation](https://en.wikipedia.org/wiki/Neighborhood_operation "Neighborhood operation") on the image data. 
 
-As consequence, the correct motion field cannot be determined for certain types of neighborhood and instead an approximation, often referred to as the [[optical flow]], has to be used. For example, a neighborhood which has a constant intensity may correspond to a non-zero motion field, but the optical flow is zero since no local image motion can be measured.
+As consequence, the correct motion field cannot be determined for certain types of neighborhood and instead an approximation, often referred to as the [[Optical Flow]], has to be used. For example, a neighborhood which has a constant intensity may correspond to a non-zero motion field, but the optical flow is zero since no local image motion can be measured.
 
 
 #cv 
