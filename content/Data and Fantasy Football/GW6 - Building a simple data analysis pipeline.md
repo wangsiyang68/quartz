@@ -49,7 +49,7 @@ Note the incredible value of Dwight McNeil, even before his GW6 15 point exploit
 ![[Pasted image 20241001220612.png]]
 *Top 20 Fowards by ICT Index score.*
 
-Of course Haaland is first. Note that while Haaland does have a high ICT Index per cost (0.50), it can still be justified by his staggering ICT Index score (75.9), while the same cannot be said for other commonly talked about players like Isak (0.29 ICT per cost for 24.4 ICT) and Solanke (0.28 ict per cost for 21.1 ICT). Since forwards this season (except Haaland) seem to be providing the least value for their money (evidenced by low overall ICT index ranking amongst top 20 forwards), I have decided to decrease the cost of my forwards by going for Jackson (best value) and Jimenez (cheapest option). Did not choose Welbeck as my personal opinion is that he's old and unlikely to continue his early season scoring streak
+Of course Haaland is first. Note that while Haaland does have a relatively low ICT Index per cost (0.50), it can still be justified by his staggering ICT Index score (75.9), while the same cannot be said for other commonly talked about players like Isak (0.29 ICT per cost for 24.4 ICT) and Solanke (0.28 ict per cost for 21.1 ICT). Since forwards this season (except Haaland) seem to be providing the least value for their money (evidenced by low overall ICT index ranking amongst top 20 forwards), I have decided to decrease the cost of my forwards by going for Jackson (best value) and Jimenez (cheapest option). Did not choose Welbeck as my personal opinion is that he's old and unlikely to continue his early season scoring streak
 
 *Final Decision*
 
