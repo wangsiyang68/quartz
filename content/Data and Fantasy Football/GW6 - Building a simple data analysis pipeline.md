@@ -3,7 +3,10 @@ There are three components of the current pipeline, that aims to answer 3 questi
 2. How do we select the next GW first 11?
 3. How do we evaluate a GW's performance?
 ## Question 1: How do we predict a player's future score?
-The aim is: given the first 5 gameweeks, can we predict which players will be the top scoring players by the end of the season? Simplest method is by calculating the R-Value between each statistic from FPL API and the Total Points in 23/24 season. 
+The aim is: given the first 5 gameweeks, can we predict which players will be the top scoring players by the end of the season? Simplest method is by calculating the R-Value between each statistic from FPL API and the Total Points in a season. 
+
+![[Pasted image 20241001222754.png]]
+*R-value between 23/24 stats at 5 Games and 23/24 total points. This was when I found out the FPL API actually has predicted the next points for each player (ep_next) that is somewhat reliable?*
 
 Based on the previous season, there seems to be a high correlation between ICT Index and the Total Points at the end of the season (0.71). This means that we can rely on the ICT Index to quickly identify the most likely top performing players for the entire season, while making incremental changes subsequently.
 
